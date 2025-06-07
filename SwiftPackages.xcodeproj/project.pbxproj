@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		950856512DEF4BE4008F8062 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 950856502DEF4BE4008F8062 /* KeychainSwift */; };
+		9535833F2DF49258000A81EA /* SwiftfulUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9535833E2DF49258000A81EA /* SwiftfulUI */; };
 		95688F182DEF0949004E34B8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 95688F172DEF0949004E34B8 /* Kingfisher */; };
 		95B371502DEDDBD100D909DB /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 95B3714F2DEDDBD100D909DB /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
@@ -29,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9535833F2DF49258000A81EA /* SwiftfulUI in Frameworks */,
 				950856512DEF4BE4008F8062 /* KeychainSwift in Frameworks */,
 				95688F182DEF0949004E34B8 /* Kingfisher in Frameworks */,
 				95B371502DEDDBD100D909DB /* SDWebImageSwiftUI in Frameworks */,
@@ -77,6 +79,7 @@
 				95B3714F2DEDDBD100D909DB /* SDWebImageSwiftUI */,
 				95688F172DEF0949004E34B8 /* Kingfisher */,
 				950856502DEF4BE4008F8062 /* KeychainSwift */,
+				9535833E2DF49258000A81EA /* SwiftfulUI */,
 			);
 			productName = SwiftPackages;
 			productReference = 95BB19102DEDDAB1009642CD /* SwiftPackages.app */;
@@ -110,6 +113,7 @@
 				95B3714E2DEDDBD100D909DB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				95688F162DEF0949004E34B8 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				9508564F2DEF4BE4008F8062 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				9535833D2DF49258000A81EA /* XCRemoteSwiftPackageReference "SwiftfulUI" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 95BB19112DEDDAB1009642CD /* Products */;
@@ -351,6 +355,14 @@
 				minimumVersion = 24.0.0;
 			};
 		};
+		9535833D2DF49258000A81EA /* XCRemoteSwiftPackageReference "SwiftfulUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
 		95688F162DEF0949004E34B8 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -374,6 +386,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9508564F2DEF4BE4008F8062 /* XCRemoteSwiftPackageReference "keychain-swift" */;
 			productName = KeychainSwift;
+		};
+		9535833E2DF49258000A81EA /* SwiftfulUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9535833D2DF49258000A81EA /* XCRemoteSwiftPackageReference "SwiftfulUI" */;
+			productName = SwiftfulUI;
 		};
 		95688F172DEF0949004E34B8 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
