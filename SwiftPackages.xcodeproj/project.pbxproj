@@ -10,9 +10,23 @@
 		950856512DEF4BE4008F8062 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 950856502DEF4BE4008F8062 /* KeychainSwift */; };
 		9535833F2DF49258000A81EA /* SwiftfulUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9535833E2DF49258000A81EA /* SwiftfulUI */; };
 		953583452DF497B8000A81EA /* SwiftfulRouting in Frameworks */ = {isa = PBXBuildFile; productRef = 953583442DF497B8000A81EA /* SwiftfulRouting */; };
+		9535834F2DF49C2B000A81EA /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 9535834E2DF49C2B000A81EA /* Lottie */; };
 		95688F182DEF0949004E34B8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 95688F172DEF0949004E34B8 /* Kingfisher */; };
 		95B371502DEDDBD100D909DB /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 95B3714F2DEDDBD100D909DB /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		953583552DF49D42000A81EA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		95BB19102DEDDAB1009642CD /* SwiftPackages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPackages.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +50,7 @@
 				95688F182DEF0949004E34B8 /* Kingfisher in Frameworks */,
 				95B371502DEDDBD100D909DB /* SDWebImageSwiftUI in Frameworks */,
 				953583452DF497B8000A81EA /* SwiftfulRouting in Frameworks */,
+				9535834F2DF49C2B000A81EA /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +83,7 @@
 				95BB190C2DEDDAB1009642CD /* Sources */,
 				95BB190D2DEDDAB1009642CD /* Frameworks */,
 				95BB190E2DEDDAB1009642CD /* Resources */,
+				953583552DF49D42000A81EA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -83,6 +99,7 @@
 				950856502DEF4BE4008F8062 /* KeychainSwift */,
 				9535833E2DF49258000A81EA /* SwiftfulUI */,
 				953583442DF497B8000A81EA /* SwiftfulRouting */,
+				9535834E2DF49C2B000A81EA /* Lottie */,
 			);
 			productName = SwiftPackages;
 			productReference = 95BB19102DEDDAB1009642CD /* SwiftPackages.app */;
@@ -118,6 +135,7 @@
 				9508564F2DEF4BE4008F8062 /* XCRemoteSwiftPackageReference "keychain-swift" */,
 				9535833D2DF49258000A81EA /* XCRemoteSwiftPackageReference "SwiftfulUI" */,
 				953583432DF497B8000A81EA /* XCRemoteSwiftPackageReference "SwiftfulRouting" */,
+				9535834D2DF49C2B000A81EA /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 95BB19112DEDDAB1009642CD /* Products */;
@@ -375,6 +393,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		9535834D2DF49C2B000A81EA /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.2;
+			};
+		};
 		95688F162DEF0949004E34B8 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -408,6 +434,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 953583432DF497B8000A81EA /* XCRemoteSwiftPackageReference "SwiftfulRouting" */;
 			productName = SwiftfulRouting;
+		};
+		9535834E2DF49C2B000A81EA /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9535834D2DF49C2B000A81EA /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 		95688F172DEF0949004E34B8 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
